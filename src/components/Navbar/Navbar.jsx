@@ -19,13 +19,13 @@ const Navbar = () => {
       </a>
       
       <div>
-        <ul className={`${styles.navList} ${clicked ? styles.active : ''}`}>
-          <li><a className={styles.navItem} href="/">Home</a></li>
-          <li><a className={styles.navItem} href="/">About</a></li>
-          <li><a className={styles.navItem} href="/">Experience</a></li>
-          <li><a className={styles.navItem} href="/">Portfolio</a></li>
-          <li><a className={styles.navItem} href="/">Contact</a></li>
-          <li><a className={styles.navItem} href="/">Social Media</a></li>
+        <ul className={`${styles.navWrapper} ${clicked ? styles.active : ''}`}>
+          <li className={styles.navList}><a className={styles.navItem} href="/">Home</a></li>
+          <li className={styles.navList}><a className={styles.navItem} href="/">About</a></li>
+          <li className={styles.navList}><a className={styles.navItem} href="/">Experience</a></li>
+          <li className={styles.navList}><a className={styles.navItem} href="/">Portfolio</a></li>
+          <li className={styles.navList}><a className={styles.navItem} href="/">Contact</a></li>
+          <li className={styles.navList}><a className={styles.navItem} href="/">Social Media</a></li>
         </ul>
       </div>
 

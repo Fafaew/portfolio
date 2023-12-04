@@ -16,13 +16,13 @@
   }
 
 
-  .navList {
+  .navWrapper {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     position: fixed;
-    top: 90px;
+    top: 95px;
     right: -300px;
     width: 300px;
     height: 100vh;
@@ -31,8 +31,25 @@
     padding: 40px 0 0 10px;
     transition: 0.3s ease-in-out;
 
+    @include media-lg {
+      flex-direction: row;
+      width: 100%;
+      height: inherit;
+      position: inherit;
+      background-color: $primary-dark;
+      box-shadow: none;
+    }
+
+    .navList {
+      padding: 1.5rem;
+    }
+
     &.active {
       right: 0;
+
+      .navList {
+        padding: 1.5rem;
+      }
     }
 
     .navItem {
@@ -42,9 +59,20 @@
     }
   }
 
-
-
   .navIcon {
-    color: orange ;
+    color: $primary-orange;
+    display: flex;
+    align-items: center;
+    margin-right: $spacing-13;
+
+    svg {
+      width: $spacing-5;
+      height: $spacing-5;
+    }
+
+
+    @include media-lg {
+      display: none;
+    }
   }
 }
