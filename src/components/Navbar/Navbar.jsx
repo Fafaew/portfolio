@@ -1,22 +1,36 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './Navbar.module.scss';
-import logo from '../../utils/imagens/logo.png'
+import logo from '../../utils/imagens/logo.png';
+import { FaBars, FaTimes  } from "react-icons/fa";
+
 
 const Navbar = () => {
+  const [clicked, setCliked] = useState(false);
+
+  const handleClick = () => {
+    setCliked(!clicked);
+  };
+
+
   return (
     <nav className={styles.navContainer}>
-      <div className={styles.logoContainer}>
+      <a href="/" className={styles.logoContainer}>
         <img src={logo} alt="logo" className={styles.navLogo}/>
+      </a>
+      
+      <div>
+        <ul className={`${styles.navList} ${clicked ? styles.active : ''}`}>
+          <li><a className={styles.navItem} href="/">Home</a></li>
+          <li><a className={styles.navItem} href="/">About</a></li>
+          <li><a className={styles.navItem} href="/">Experience</a></li>
+          <li><a className={styles.navItem} href="/">Portfolio</a></li>
+          <li><a className={styles.navItem} href="/">Contact</a></li>
+          <li><a className={styles.navItem} href="/">Social Media</a></li>
+        </ul>
       </div>
 
-      <div className={styles.navLinks}>
-        <ul className={styles.navList}>
-          <li className={styles.navItem}>Home</li>
-          <li className={styles.navItem}>Portfolio</li>
-          <li className={styles.navItem}>Experience</li>
-          <li className={styles.navItem}>About</li>
-          <li className={styles.navItem}>Contact</li>
-      </ul>
+      <div className={styles.navIcon} onClick={handleClick}>
+        <i>{clicked ? <FaTimes /> : <FaBars />}</i>
       </div>
     </nav>
   )

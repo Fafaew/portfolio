@@ -8,23 +8,43 @@
   height: $spacing-13;
 
   .logoContainer {
-    margin: $spacing-4 0 0 $spacing-5;
+    margin: $spacing-4 0 0 $spacing-13;
 
     .navLogo {
       height: $spacing-7;
     }
   }
 
-  .navLinks {
-    .navList {
-      display: flex;
-      margin: $spacing-6 $spacing-5 0 0;
-      font-size: $font-size-headline-2;
+
+  .navList {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 90px;
+    right: -300px;
+    width: 300px;
+    height: 100vh;
+    background-color: #2a3239;
+    box-shadow: 0 40px 60px rgba(0,0,0,0.1);
+    padding: 40px 0 0 10px;
+    transition: 0.3s ease-in-out;
+
+    &.active {
+      right: 0;
     }
 
     .navItem {
       color: $primary-orange;
-      margin-right: $spacing-3;
+      margin-right: $spacing-6;
+      text-decoration: none;
     }
+  }
+
+
+
+  .navIcon {
+    color: orange ;
   }
 }
