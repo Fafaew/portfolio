@@ -38,10 +38,17 @@
       position: inherit;
       background-color: $primary-dark;
       box-shadow: none;
+      padding: 20px 0 0 10px;
+      margin-right: 7rem;
+
     }
 
     .navList {
       padding: 1.5rem;
+
+      @include media-lg {
+        padding: 1.5rem 0.5rem;
+      }
     }
 
     &.active {
