@@ -53,6 +53,7 @@
 
     &.active {
       right: 0;
+      z-index: 2;
 
       .navList {
         padding: 1.5rem;
