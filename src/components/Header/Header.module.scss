@@ -20,19 +20,22 @@
   .contactWrapper {
     position: relative;
     display: flex;
-    top: 45%;
+    top: 40%;
     justify-content: center;
 
     .contactButton {
       width: 50%;
       text-align: center;
-      top: 60%;
       border: 1px solid $primary-red;
       text-transform: uppercase;
       border-radius: 0;
       padding: 0.625rem 0.75rem 0.75rem 0.75rem;
       color: $primary-white;
       margin: 2rem;
+
+      @include media-md {
+        width: 25%;
+      }
 
       &:hover {
         text-decoration: none;
