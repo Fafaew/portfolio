@@ -1,3 +1,5 @@
+@import '../styles/Functions.scss';
+
 //Color
 $primary-white: #ffffff;
 $primary-light-grey: #f4f4f4;
@@ -42,19 +44,19 @@ $font-size-caption-3: rem(8); // 8px
 
 /* ========================================================================== */
 /* Spacing */
-$spacing-15: rem(112); // 112px
-$spacing-14: rem(104); // 104px
-$spacing-13: rem(96); // 96px
-$spacing-12: rem(88); // 88px
-$spacing-11: rem(80); // 80px
-$spacing-10: rem(72); // 72px
-$spacing-9: rem(64); // 64px
-$spacing-8: rem(56); // 56px
-$spacing-7: rem(48); // 48px
-$spacing-6: rem(40); // 40px
-$spacing-5: rem(32); // 32px
-$spacing-4: rem(24); // 24px
-$spacing-3: rem(16); // 16px
-$spacing-2: rem(8); // 8px
-$spacing-1: rem(4); // 4px
-$spacing-0: rem(2); // 2px
+$spacing-15: rem(112); // 112px - 7rem
+$spacing-14: rem(104); // 104px - 6.5rem
+$spacing-13: rem(96); // 96px - 6rem
+$spacing-12: rem(88); // 88px - 5.5rem
+$spacing-11: rem(80); // 80px - 5rem
+$spacing-10: rem(72); // 72px - 4.5rem
+$spacing-9: rem(64); // 64px - 4rem
+$spacing-8: rem(56); // 56px - 3.5rem
+$spacing-7: rem(48); // 48px - 3rem
+$spacing-6: rem(40); // 40px - 2.5rem
+$spacing-5: rem(32); // 32px - 2rem
+$spacing-4: rem(24); // 24px - 1.5rem
+$spacing-3: rem(16); // 16px - 1rem
+$spacing-2: rem(8); // 8px - 0.5rem
+$spacing-1: rem(4); // 4px - 0.25rem
+$spacing-0: rem(2); // 2px - 0.125rem
