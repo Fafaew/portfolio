@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from './Navbar.module.scss';
-import logo from '../../utils/imagens/logo.png';
+import logo from '../../utils/images/logo.png';
 import { FaBars, FaTimes  } from "react-icons/fa";
 
 

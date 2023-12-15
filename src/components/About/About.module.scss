@@ -1,0 +1,28 @@
+@import '../../utils/styles/Breakpoints.scss';
+@import '../../utils/styles/Variables.scss';
+
+.aboutContainer {
+  .pictureWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5rem;
+
+    .pictureImage {
+      width: 16rem;
+      border-radius: 50%;
+      padding: .3rem;
+      border: 1px solid $primary-orange;
+    }
+  }
+
+  .aboutWrapper {
+
+    .aboutHeading {
+      color: $primary-orange;
+      text-transform: uppercase;
+      padding-bottom: 1rem;
+    }
+
+  }
+}
