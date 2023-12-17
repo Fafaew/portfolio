@@ -2,11 +2,13 @@
 @import '../../utils/styles/Variables.scss';
 
 .aboutContainer {
+  background-color: $primary-light-grey;
+
   .pictureWrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2.5rem;
+    padding-top: 3rem;
 
     .pictureImage {
       width: 16rem;
@@ -17,12 +19,21 @@
   }
 
   .aboutWrapper {
+    padding: 0 1rem;
+    text-align: left;
 
     .aboutHeading {
       color: $primary-orange;
       text-transform: uppercase;
-      padding-bottom: 1rem;
+      padding: 2rem 0;
+      text-align: center;
+      font-size: $font-size-headline-1;
     }
+
+    .aboutActivities {
+      display: flex;
+    }
+
 
   }
 }
