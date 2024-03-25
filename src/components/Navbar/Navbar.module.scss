@@ -6,6 +6,8 @@
   display: flex;
   justify-content: space-between;
   height: $spacing-13;
+  position: relative;
+  z-index: 2;
 
   .logoContainer {
     margin: $spacing-4 0 0 $spacing-5;
