@@ -31,9 +31,9 @@
     .contactButton {
       width: 50%;
       text-align: center;
-      border: 1px solid $primary-red;
+      border: 1px solid $secondary-blue;
+      border-radius: 26px;
       text-transform: uppercase;
-      border-radius: 0;
       padding: 0.625rem 0.75rem 0.75rem 0.75rem;
       color: $primary-white;
       margin: 2rem;
@@ -44,7 +44,8 @@
 
       &:hover {
         text-decoration: none;
-        background-color: $primary-red;
+      border-radius: 26px;
+      background-color: $secondary-blue;
         color: $primary-white;
         transition: .2s ease-in-out;
         }
