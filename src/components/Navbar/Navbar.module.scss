@@ -6,15 +6,20 @@
   display: flex;
   justify-content: space-between;
   height: $spacing-13;
+  position: relative;
+  z-index: 2;
 
   .logoContainer {
     margin: $spacing-4 0 0 $spacing-5;
+
+    @include media-lg {
+      margin-left: 4rem;
+    }
 
     .navLogo {
       height: $spacing-7;
     }
   }
-
 
   .navWrapper {
     display: flex;
@@ -61,14 +66,14 @@
     }
 
     .navItem {
-      color: $primary-orange;
+      color: $primary-blue;
       margin-right: $spacing-6;
       text-decoration: none;
     }
   }
 
   .navIcon {
-    color: $primary-orange;
+    color: $primary-blue;
     display: flex;
     align-items: center;
     margin-right: $spacing-7;
@@ -77,7 +82,6 @@
       width: $spacing-5;
       height: $spacing-5;
     }
-
 
     @include media-lg {
       display: none;

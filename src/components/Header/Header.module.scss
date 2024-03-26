@@ -1,6 +1,11 @@
 @import '../../utils/styles/Variables.scss';
 @import '../../utils/styles/Breakpoints.scss';
 
+#tsparticles {
+  position: relative;
+  z-index: 1;
+}
+
 .headerWraper {
   position: relative;
   background: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(0, 0, 0, 0.93)), url('../../utils/imagens/headerImg.jpg') no-repeat;
@@ -20,23 +25,27 @@
   .contactWrapper {
     position: relative;
     display: flex;
-    top: 45%;
+    top: 40%;
     justify-content: center;
 
     .contactButton {
       width: 50%;
       text-align: center;
-      top: 60%;
-      border: 1px solid $primary-red;
+      border: 1px solid $secondary-blue;
+      border-radius: 26px;
       text-transform: uppercase;
-      border-radius: 0;
       padding: 0.625rem 0.75rem 0.75rem 0.75rem;
       color: $primary-white;
       margin: 2rem;
 
+      @include media-md {
+        width: 25%;
+      }
+
       &:hover {
         text-decoration: none;
-        background-color: $primary-red;
+      border-radius: 26px;
+      background-color: $secondary-blue;
         color: $primary-white;
         transition: .2s ease-in-out;
         }
