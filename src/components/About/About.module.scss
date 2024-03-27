@@ -3,6 +3,9 @@
 
 .aboutContainer {
   background-color: $primary-light-grey;
+  position: absolute;
+  z-index: 2;
+  padding: 0 2rem;
 
   .pictureWrapper {
     display: flex;
@@ -14,16 +17,15 @@
       width: 16rem;
       border-radius: 50%;
       padding: .3rem;
-      border: 1px solid $primary-orange;
+      border: 1px solid $secondary-blue;
     }
   }
 
   .aboutWrapper {
-    padding: 0 1rem;
     text-align: left;
 
     .aboutHeading {
-      color: $primary-orange;
+      color: $secondary-blue;
       text-transform: uppercase;
       padding: 2rem 0;
       text-align: center;
@@ -32,8 +34,21 @@
 
     .aboutActivities {
       display: flex;
+      margin-bottom: $spacing-2;
+
+      .aboutText {
+        margin-left: $spacing-2;
+      }
     }
 
+    .aboutIconsWrapper {
+      margin-top: $spacing-2;
 
+      .aboutIcons {
+        width: 2rem;
+        height: 2rem;
+        margin-right: $spacing-3;
+      }
+    }
   }
 }

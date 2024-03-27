@@ -41,11 +41,11 @@ const About = () => {
         </div>
         <br />
         <p>Technologies that I use:</p>
-        <div className="aboutIcons">
-          <FaNode className="icon" />
-          <RiJavascriptFill className="icon" />
-          <FaReact className="icon" />
-          <FaShopify className="icon" />
+        <div className={styles.aboutIconsWrapper}>
+          <FaNode className={styles.aboutIcons} />
+          <RiJavascriptFill className={styles.aboutIcons} />
+          <FaReact className={styles.aboutIcons} />
+          <FaShopify className={styles.aboutIcons} />
         </div>
       </div>
 
