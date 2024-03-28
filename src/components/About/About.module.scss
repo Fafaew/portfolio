@@ -7,34 +7,70 @@
   z-index: 2;
   padding: 0 2rem;
 
+  @include media-lg {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
   .pictureWrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 3rem;
+    margin-top: 3rem;
+
+    @include media-lg {
+      margin-top: 0;
+      margin-bottom: 2rem;
+    }
 
     .pictureImage {
       width: 16rem;
-      border-radius: 50%;
+      border-radius: 30% 70% 30% 30% / 30% 30% 70% 70%;
       padding: .3rem;
       border: 1px solid $secondary-blue;
     }
   }
 
   .aboutWrapper {
-    text-align: left;
+    @include media-lg {
+      margin-top: 3rem;
+      padding: 0 2rem;
+    }
 
-    .aboutHeading {
-      color: $secondary-blue;
-      text-transform: uppercase;
-      padding: 2rem 0;
-      text-align: center;
-      font-size: $font-size-headline-1;
+    .aboutIntro {
+      display: grid;
+      grid-gap: 1rem;
+      margin-bottom: 1.5rem;
+
+      .aboutSubtitle {
+        font-size: $font-size-headline-3;
+        position: relative;
+        color: $secondary-blue;
+        text-transform: uppercase;
+        padding-top: 1rem;
+        text-align: center;
+        font-size: $font-size-headline-1;
+        display: flex;
+        justify-content: center;
+  
+        &::after {
+          content: "";
+          width: 15%; 
+          height: 2px;
+          background-color: $primary-blue;
+          position: absolute;
+          bottom: 0;
+
+          @include media-md {
+            width: 5%;
+          }
+        }
+      }
     }
 
     .aboutActivities {
       display: flex;
-      margin-bottom: $spacing-2;
+      align-items: center;
 
       .aboutText {
         margin-left: $spacing-2;
@@ -42,12 +78,27 @@
     }
 
     .aboutIconsWrapper {
-      margin-top: $spacing-2;
 
       .aboutIcons {
-        width: 2rem;
-        height: 2rem;
+        width: 3rem;
+        height: 3rem;
         margin-right: $spacing-3;
+
+        &.nodeIcon {
+          color: #417E38;
+        }
+
+        &.jsIcon {
+          color: #EFD81D;
+        }
+
+        &.reactIcon {
+          color: #5ED3F3;
+        }
+
+        &.shopifyIcon {
+          color: #90B945;
+        }
       }
     }
   }

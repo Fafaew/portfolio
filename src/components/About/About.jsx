@@ -2,16 +2,11 @@ import React from 'react';
 import styles from './About.module.scss';
 import picture from '../../utils/images/picture.jpg';
 import { FaNode, FaReact, FaShopify } from "react-icons/fa";
-import { FaBookOpenReader } from "react-icons/fa6";
 import { RiJavascriptFill } from "react-icons/ri";
-import { IoGameControllerOutline } from "react-icons/io5";
-import { GiWeightLiftingUp } from "react-icons/gi";
-
-
-
-
 
 const About = () => {
+  const workYears = new Date().getFullYear() - 2020
+
   return (
     <div className={styles.aboutContainer}>
       <div className={styles.pictureWrapper}>
@@ -19,33 +14,50 @@ const About = () => {
       </div>
 
       <div className={styles.aboutWrapper}>
-        <h1 className={styles.aboutHeading}>about me</h1>
-        <p className={styles.aboutIntro}>
-          Hello everyone! I'm Rafael Gomes, a web developer from Minas Gerais,
-          Brazil. I have been developing websites for over 2 years.
-        </p>
-        <br />
-        <p className={styles.aboutIntro}>Apart from coding, some other activities that I love to do:</p>
-        <br />
-        <div className={styles.aboutActivities}>
-          <IoGameControllerOutline />
-          <p className={styles.aboutText}>Play Video Games</p>
+        <div className={styles.aboutIntro}>
+          <h2 class={styles.aboutSubtitle}>About </h2>
+          <p>
+            Hello everyone, I'm Rafael Gomes, a passionate frontend developer, based in Minas Gerais, Brazil.
+          </p>
+          <p>
+            With over {workYears} years of hands-on experience, i've worked in multinational companies and e-commerce platforms, acquiring precious insights, best practices and trends.
+          </p>
+          <p>
+            With modern and captivating websites, my goal is work in innovative projects to deliver immersive user experiences.
+          </p>
+          <p>
+            Let's collaborate and transform your digital presence into a captivating journey!
+          </p>
         </div>
-        <div className={styles.aboutActivities}>
-          <GiWeightLiftingUp />
-          <p className={styles.aboutText}>Practice Sports</p>
+        <div className={styles.aboutIntro}>
+          <h2 class={styles.aboutSubtitle}>Hobbies </h2>
+          <p>Apart from coding, some other activities that I love to do:</p>
+          <div className={styles.aboutActivities}>
+            <img width="30" height="30" src="https://img.icons8.com/color/48/controller.png" alt="controller"/>
+            <p className={styles.aboutText}>Play Video Games</p>
+          </div>
+          <div className={styles.aboutActivities}>
+          <img width="30" height="30" src="https://img.icons8.com/color/48/deadlift-skin-type-4.png" alt="deadlift-skin-type-4"/>
+            <p className={styles.aboutText}>Workout</p>
+          </div>
+          <div className={styles.aboutActivities}>
+            <img width="30" height="30" src="https://img.icons8.com/color/48/combo-chart--v1.png" alt="combo-chart--v1"/>
+            <p className={styles.aboutText}>Learn about financial market</p>
+          </div>
+          <div className={styles.aboutActivities}>
+            <img width="30" height="30" src="https://img.icons8.com/color/48/tableware.png" alt="tableware"/>
+            <p className={styles.aboutText}>Try new foods</p>
+          </div>
         </div>
-        <div className={styles.aboutActivities}>
-          <FaBookOpenReader />
-          <p className={styles.aboutText}>Learn about financial market</p>
-        </div>
-        <br />
-        <p>Technologies that I use:</p>
-        <div className={styles.aboutIconsWrapper}>
-          <FaNode className={styles.aboutIcons} />
-          <RiJavascriptFill className={styles.aboutIcons} />
-          <FaReact className={styles.aboutIcons} />
-          <FaShopify className={styles.aboutIcons} />
+        <div className={styles.aboutIntro}>
+          <h2 class={styles.aboutSubtitle}>Skills </h2>
+          <p>Technologies that I use:</p>
+          <div className={styles.aboutIconsWrapper}>
+            <FaNode className={`${styles.aboutIcons} ${styles.nodeIcon}`} />
+            <RiJavascriptFill className={`${styles.aboutIcons} ${styles.jsIcon}`} />
+            <FaReact className={`${styles.aboutIcons} ${styles.reactIcon}`} />
+            <FaShopify className={`${styles.aboutIcons} ${styles.shopifyIcon}`} />
+          </div>
         </div>
       </div>
 
