@@ -33,19 +33,19 @@ const About = () => {
           <h2 class={styles.aboutSubtitle}>Hobbies </h2>
           <p>Apart from coding, some other activities that I love to do:</p>
           <div className={styles.aboutActivities}>
-            <img width="30" height="30" src="https://img.icons8.com/color/48/controller.png" alt="controller"/>
+            <img width="26" height="26" src="https://img.icons8.com/color/48/controller.png" alt="controller"/>
             <p className={styles.aboutText}>Play Video Games</p>
           </div>
           <div className={styles.aboutActivities}>
-          <img width="30" height="30" src="https://img.icons8.com/color/48/deadlift-skin-type-4.png" alt="deadlift-skin-type-4"/>
+          <img width="26" height="26" src="https://img.icons8.com/color/48/deadlift-skin-type-4.png" alt="deadlift-skin-type-4"/>
             <p className={styles.aboutText}>Workout</p>
           </div>
           <div className={styles.aboutActivities}>
-            <img width="30" height="30" src="https://img.icons8.com/color/48/combo-chart--v1.png" alt="combo-chart--v1"/>
+            <img width="26" height="26" src="https://img.icons8.com/color/48/combo-chart--v1.png" alt="combo-chart--v1"/>
             <p className={styles.aboutText}>Learn about financial market</p>
           </div>
           <div className={styles.aboutActivities}>
-            <img width="30" height="30" src="https://img.icons8.com/color/48/tableware.png" alt="tableware"/>
+            <img width="26" height="26" src="https://img.icons8.com/color/48/tableware.png" alt="tableware"/>
             <p className={styles.aboutText}>Try new foods</p>
           </div>
         </div>
