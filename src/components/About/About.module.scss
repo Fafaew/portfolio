@@ -2,8 +2,7 @@
 @import '../../utils/styles/Variables.scss';
 
 .aboutContainer {
-  background-color: $primary-light-grey;
-  position: absolute;
+  position: relative;
   z-index: 2;
   padding: 0 2rem;
 

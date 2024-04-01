@@ -1,0 +1,45 @@
+@import '../../utils/styles/Variables.scss';
+@import '../../utils/styles/Functions.scss';
+@import '../../utils/styles/Breakpoints.scss';
+
+.experienceContainer {
+  background: rgb(244,244,244);
+  padding-top: 3rem;
+
+  .experienceSubtitle {
+    font-size: $font-size-headline-3;
+    position: relative;
+    color: $secondary-blue;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: $font-size-headline-1;
+    display: flex;
+    justify-content: center;
+
+    &::after {
+      content: "";
+      width: 15%; 
+      height: 2px;
+      background-color: $primary-blue;
+      position: absolute;
+      bottom: 0;
+
+      @include media-md {
+        width: 5%;
+      }
+    }
+  }
+
+  .timelineWrapper {
+    color: black !important;
+  }
+
+  .experienceActivities {
+    margin: 1rem 0 0 2rem;
+    list-style: disc;
+  }
+
+  .experienceTechnologies {
+    margin-left: 1rem;
+  }
+}
