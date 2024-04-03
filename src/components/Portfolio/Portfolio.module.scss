@@ -1,0 +1,83 @@
+@import '../../utils/styles/Breakpoints.scss';
+@import '../../utils/styles/Functions.scss';
+@import '../../utils/styles/Variables.scss';
+
+
+.portfolioContainer {
+  padding-top: 2rem;
+  position: relative;
+  z-index: 2;
+
+  .portfolioSubtitle {
+    font-size: $font-size-headline-3;
+    position: relative;
+    color: $secondary-blue;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: $font-size-headline-1;
+    display: flex;
+    justify-content: center;
+
+    &::after {
+      content: "";
+      width: 15%; 
+      height: 2px;
+      background-color: $primary-blue;
+      position: absolute;
+      bottom: 0;
+
+      @include media-md {
+        width: 5%;
+      }
+    }
+  }
+
+  .portfolioWrapper {
+    margin-top: 2rem;
+
+    @include media-lg {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      padding: 0 5rem;
+    }
+
+    .portfolioItem {
+      border: 1px solid black;
+      margin: 1rem 2rem;
+      text-align: center;
+      padding: 0 1.5rem;
+      border-radius: 5%;
+
+      @include media-md {
+        margin: 3rem 10rem;
+      }
+
+      @include media-lg {
+        margin: 1rem 2rem;
+      }
+
+      .portfolioBox {
+        margin-top: 1.5rem;
+
+        .portfolioImage {
+          height: 8rem;
+          width: 8rem;
+          padding: 0.3rem;
+          border: 1px solid $primary-blue;
+          border-radius: 50%;
+        }
+      }
+
+      .portfolioLegend {
+        font-size: 24px;
+        margin: 20px 0 8px 0;
+      }
+
+      .portfolioCode {
+        display: flex;
+        margin: 2rem;
+        justify-content: space-evenly;
+      }
+    }
+  }
+}
