@@ -2,7 +2,7 @@ import { React, useState } from 'react';
 import styles from './Contact.module.scss';
 import emailjs from '@emailjs/browser';
 
-const EmailForm = () => {
+const Contact = () => {
 
   const [name, setName] = useState('');;
   const [email, setEmail] = useState('')
@@ -67,4 +67,4 @@ const EmailForm = () => {
   );
 }
 
-export default EmailForm 
+export default Contact 
