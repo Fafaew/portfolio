@@ -25,7 +25,6 @@ const Navbar = () => {
           <li className={styles.navList}><a className={styles.navItem} href="/">Experience</a></li>
           <li className={styles.navList}><a className={styles.navItem} href="/">Portfolio</a></li>
           <li className={styles.navList}><a className={styles.navItem} href="/">Contact</a></li>
-          <li className={styles.navList}><a className={styles.navItem} href="/">Social Media</a></li>
         </ul>
       </div>
 
