@@ -102,7 +102,7 @@ const Header = () => {
           options={options}
         />
 
-        <div className={styles.headerWraper}>
+        <div className={styles.headerWraper} id="home">
           <TypeAnimation
           sequence={[
             'Node',

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-scroll';
 import styles from './Navbar.module.scss';
 import logo from '../../utils/images/logo.png';
 import { FaBars, FaTimes  } from "react-icons/fa";
@@ -19,17 +20,79 @@ const Navbar = () => {
 
   return (
     <nav className={styles.navContainer}>
-      <a href="/" className={styles.logoContainer}>
+      <Link
+        to="home"
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration={500}
+        className={styles.logoContainer}
+      >
         <img src={logo} alt="logo" className={styles.navLogo}/>
-      </a>
+      </Link>
       
       <div>
         <ul className={`${styles.navWrapper} ${clicked ? styles.active : ''}`}>
-          <li className={styles.navList}><a className={styles.navItem} href="/">Home</a></li>
-          <li className={styles.navList}><a className={styles.navItem} href="/">About</a></li>
-          <li className={styles.navList}><a className={styles.navItem} href="/">Experience</a></li>
-          <li className={styles.navList}><a className={styles.navItem} href="/">Portfolio</a></li>
-          <li className={styles.navList}><a className={styles.navItem} href="/">Contact</a></li>
+          <li className={styles.navList}>
+            <Link
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className={styles.navItem}
+            >
+              Home
+            </Link>
+          </li>
+          <li className={styles.navList}>
+            <Link
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={-10}
+              duration={500}
+              className={styles.navItem}
+            >
+              About
+            </Link>
+          </li>
+          <li className={styles.navList}>
+            <Link
+              to="experience"
+              spy={true}
+              smooth={true}
+              offset={-10}
+              duration={500}
+              className={styles.navItem}
+            >
+              Experience
+            </Link>
+          </li>
+          <li className={styles.navList}>
+            <Link
+              to="portfolio"
+              spy={true}
+              smooth={true}
+              offset={-10}
+              duration={500}
+              className={styles.navItem}
+            >
+              Portfolio
+            </Link>
+          </li>
+          <li className={styles.navList}>
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-10}
+              duration={500}
+              className={styles.navItem}
+            >
+              Contact
+            </Link>
+          </li>
         </ul>
       </div>
 

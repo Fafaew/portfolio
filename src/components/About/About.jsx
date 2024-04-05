@@ -8,7 +8,7 @@ const About = () => {
   const workYears = new Date().getFullYear() - 2020
 
   return (
-    <div className={styles.aboutContainer}>
+    <div className={styles.aboutContainer} id="about">
       <div className={styles.pictureWrapper}>
         <img className={styles.pictureImage} src={picture} alt="Author" />
       </div>

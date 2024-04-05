@@ -24,6 +24,8 @@
 
     .navLogo {
       height: 2.5rem;
+      cursor: pointer;
+
     }
   }
 
@@ -78,7 +80,7 @@
       text-decoration: none;
       border-bottom: 2px solid #c9e7ee;
       padding-bottom: 2px;
-
+      cursor: pointer;
 
       &:hover {
         color: #c9e7ee;
