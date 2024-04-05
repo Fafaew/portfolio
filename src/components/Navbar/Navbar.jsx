@@ -9,6 +9,11 @@ const Navbar = () => {
 
   const handleClick = () => {
     setCliked(!clicked);
+    if (!clicked) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
   };
 
 
