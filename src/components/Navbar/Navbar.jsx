@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import styles from './Navbar.module.scss';
 import logo from '../../utils/images/logo.png';
@@ -7,6 +7,19 @@ import { FaBars, FaTimes  } from "react-icons/fa";
 
 const Navbar = () => {
   const [clicked, setCliked] = useState(false);
+  const [prevScrollPos, setPrevScrollPos] = useState(window.scrollY);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.scrollY;
+      const isVisible = prevScrollPos >= currentScrollPos;
+      setPrevScrollPos(currentScrollPos);
+      document.getElementById('navbar').style.top = isVisible ? '0' : '-100px';
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [prevScrollPos]);
 
   const handleClick = () => {
     setCliked(!clicked);
@@ -26,7 +39,7 @@ const Navbar = () => {
 
 
   return (
-    <nav className={styles.navContainer}>
+    <nav id="navbar" className={styles.navContainer}>
       <Link
         to="home"
         spy={true}

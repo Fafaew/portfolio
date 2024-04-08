@@ -6,8 +6,13 @@
   display: flex;
   justify-content: space-between;
   height: $spacing-13;
-  position: relative;
-  z-index: 2;
+  position: sticky;
+  z-index: 3;
+  transition: top 0.5s ease;
+
+  .hidden {
+    top: -100px;
+  }
 
   @include media-lg {
     height: 4rem;
@@ -38,7 +43,7 @@
     top: 95px;
     right: -300px;
     width: 300px;
-    height: 100vh;
+    height: 90vh;
     background-color: #2a3239;
     box-shadow: 0 40px 60px rgba(0,0,0,0.1);
     padding: 40px 0 0 10px;
