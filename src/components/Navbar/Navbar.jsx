@@ -17,6 +17,13 @@ const Navbar = () => {
     }
   };
 
+  const handleLinkClick = () => {
+    if (clicked) {
+      setCliked(false);
+      document.body.style.overflow = 'auto';
+    }
+  };
+
 
   return (
     <nav className={styles.navContainer}>
@@ -41,6 +48,7 @@ const Navbar = () => {
               offset={-70}
               duration={500}
               className={styles.navItem}
+              onClick={handleLinkClick}
             >
               Home
             </Link>
@@ -53,6 +61,7 @@ const Navbar = () => {
               offset={-10}
               duration={500}
               className={styles.navItem}
+              onClick={handleLinkClick}
             >
               About
             </Link>
@@ -65,6 +74,7 @@ const Navbar = () => {
               offset={-10}
               duration={500}
               className={styles.navItem}
+              onClick={handleLinkClick}
             >
               Experience
             </Link>
@@ -77,6 +87,7 @@ const Navbar = () => {
               offset={-10}
               duration={500}
               className={styles.navItem}
+              onClick={handleLinkClick}
             >
               Portfolio
             </Link>
@@ -89,6 +100,7 @@ const Navbar = () => {
               offset={-10}
               duration={500}
               className={styles.navItem}
+              onClick={handleLinkClick}
             >
               Contact
             </Link>
