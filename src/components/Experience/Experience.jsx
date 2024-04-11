@@ -5,7 +5,7 @@ import 'react-vertical-timeline-component/style.min.css';
 
 const Experience = () => {
   return (
-    <div className={styles.experienceContainer}>
+    <div className={styles.experienceContainer} id="experience">
       <h2 class={styles.experienceSubtitle}>Experience </h2>
       <VerticalTimeline>
         <VerticalTimelineElement
