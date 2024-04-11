@@ -13,6 +13,7 @@ const Experience = () => {
           date="Jan 2020 - Nov 2020"
           iconStyle={{ background: '#4EB2C7', color: '#fff' }}
           contentStyle={{ background: '#4EB2C7', color: '#000' }}
+          contentArrowStyle={{ borderRight: '7px solid #4EB2C7' }}
         >
           <h3 className="vertical-timeline-element-title">Freelancer Software Developer</h3>
           <h4 className="vertical-timeline-element-subtitle">Minas Gerais, BR</h4>
@@ -29,6 +30,7 @@ const Experience = () => {
           date="Nov 2020 - Feb 2021"
           iconStyle={{ background: '#80E4F9', color: '#fff' }}
           contentStyle={{ background: '#80E4F9', color: '#000' }}
+          contentArrowStyle={{ borderRight: '7px solid #80E4F9' }}
         >
           <h3 className="vertical-timeline-element-title">Software Developer Intern - Teknisa</h3>
           <h4 className="vertical-timeline-element-subtitle">Minas Gerais, BR</h4>
@@ -46,6 +48,7 @@ const Experience = () => {
           date="Feb 2021 - May 2022"
           iconStyle={{ background: '#4EB2C7', color: '#fff' }}
           contentStyle={{ background: '#4EB2C7', color: '#000' }}
+          contentArrowStyle={{ borderRight: '7px solid #4EB2C7' }}
         >
           <h3 className="vertical-timeline-element-title">Software Developer - Ci&T</h3>
           <h4 className="vertical-timeline-element-subtitle">Sao Paulo - BR</h4>
@@ -62,6 +65,7 @@ const Experience = () => {
           date="May 2022 - Present"
           iconStyle={{ background: '#80E4F9', color: '#fff' }}
           contentStyle={{ background: '#80E4F9', color: '#000' }}
+          contentArrowStyle={{ borderRight: '7px solid #80E4F9' }}
         >
           <h3 className="vertical-timeline-element-title">Software Developer - Grupo Soma</h3>
           <h4 className="vertical-timeline-element-subtitle">Rio de Janeiro, BR</h4>
