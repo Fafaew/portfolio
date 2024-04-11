@@ -1,14 +1,14 @@
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
-import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
-
-
+import { loadSlim } from "@tsparticles/slim";
+import { Link } from 'react-scroll';
 import styles from './Header.module.scss';
 import { TypeAnimation } from 'react-type-animation';
 
 
 const Header = () => {
   const [init, setInit] = useState(false);
+  const [clicked, setCliked] = useState(false);
 
   useEffect(() => {
     initParticlesEngine(async (engine) => {
@@ -93,6 +93,13 @@ const Header = () => {
     [],
   );
 
+  const handleLinkClick = () => {
+    if (clicked) {
+      setCliked(false);
+      document.body.style.overflow = 'auto';
+    }
+  };
+
   if (init) {
     return (
       <>
@@ -120,9 +127,17 @@ const Header = () => {
           repeat={Infinity}
         />
           <div className={styles.contactWrapper}>
-            <a href="/" className={styles.contactButton}>
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-10}
+              duration={500}
+              className={styles.contactButton}
+              onClick={handleLinkClick}
+            >
               Contact me
-            </a>
+            </Link>
           </div>
         </div>
       </>
