@@ -7,7 +7,7 @@ import dashboard from "../../utils/images/portfolioImages/dashboard.jpg";
 
 const Portfolio = () => {
   return (
-    <div className={styles.portfolioContainer}>
+    <div className={styles.portfolioContainer} id="portfolio">
       <h2 className={styles.portfolioSubtitle}>Portfolio</h2>
       <div className={styles.portfolioWrapper}>
         

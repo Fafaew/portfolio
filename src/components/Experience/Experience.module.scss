@@ -5,6 +5,8 @@
 .experienceContainer {
   background: rgb(244,244,244);
   padding-top: 3rem;
+  position: relative;
+  z-index: 2;
 
   .experienceSubtitle {
     font-size: $font-size-headline-3;

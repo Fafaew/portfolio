@@ -33,7 +33,7 @@ const Contact = () => {
   }
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="contact">
       <h1 className="title">Contato</h1>
 
       <form className={styles.form} onSubmit={sendEmail}>
