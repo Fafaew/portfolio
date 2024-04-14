@@ -77,6 +77,15 @@
         display: flex;
         margin: 2rem;
         justify-content: space-evenly;
+
+        @include media-lg {
+          margin: 2rem 0;
+        }
+
+        .portfolioLinks {
+          text-decoration: none;
+          color: #000;
+        }
       }
     }
   }

@@ -33,8 +33,8 @@ const Contact = () => {
   }
 
   return (
-    <div className={styles.container} id="contact">
-      <h1 className="title">Contato</h1>
+    <div className={styles.contactContainer} id="contact">
+      <h2 class={styles.contactSubtitle}>Contact </h2>
 
       <form className={styles.form} onSubmit={sendEmail}>
         <input 
@@ -63,6 +63,29 @@ const Contact = () => {
         <input className={styles.button} type="submit" value="Enviar" />
       </form>
 
+      <div className={styles.socialBox}>
+        <h2 class={styles.contactSubtitle}>Social Links </h2>
+        < div className={styles.socialWrapper}>
+          <div className={styles.socialItem}>
+            <a className={styles.socialLink} href="https://twitter.com/fafaelgomes" target="_blank" rel="noreferrer">
+            <img width="48" height="48" src="https://img.icons8.com/ios-filled/48/twitterx--v2.png" alt="twitterx--v2"/>
+            <p> Twitter</p>
+            </a>
+          </div>
+          <div className={styles.socialItem}>
+            <a className={styles.socialLink} href="https://www.linkedin.com/in/rafael-gomes-tregelas/" target="_blank" rel="noreferrer">
+            <img width="48" height="48" src="https://img.icons8.com/color/48/linkedin-2--v1.png" alt="linkedin-2--v1"/>
+                        <p>Linkedin</p>
+            </a>
+          </div>
+          <div className={styles.socialItem}>
+            <a className={styles.socialLink} href="https://github.com/Fafaew" target="_blank" rel="noreferrer">
+            <img width="48" height="48" src="https://img.icons8.com/external-tal-revivo-bold-tal-revivo/48/external-github-a-web-based-hosting-service-for-version-control-logo-bold-tal-revivo.png" alt="external-github-a-web-based-hosting-service-for-version-control-logo-bold-tal-revivo"/>
+            <p>Github</p>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
