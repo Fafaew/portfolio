@@ -21,14 +21,14 @@ const Portfolio = () => {
             will help the achievement of organizational goals
           </p>
           <div className={styles.portfolioCode}>
-            <a href="https://github.com/Fafaew/react-dashboard"
+            <a className={styles.portfolioLinks} href="https://github.com/Fafaew/react-dashboard"
               rel="noreferrer"
               target="_blank"
             >
               <img width="48" height="48" src="https://img.icons8.com/color/48/github-2.png" alt="github-2" />
               <p>Github</p>
             </a>
-            <a href="https://github.com/Fafaew/react-dashboard"
+            <a className={styles.portfolioLinks} href="https://github.com/Fafaew/react-dashboard"
               rel="noreferrer"
               target="_blank"
             >
@@ -44,17 +44,17 @@ const Portfolio = () => {
           </div>
           <h3 className={styles.portfolioLegend}>E-commerce</h3>
           <p>
-            A Website site to buy and sell of products and services all over the world
+          A global online marketplace connecting buyers and sellers of products and services worldwide
           </p>
           <div className={styles.portfolioCode}>
-            <a href="https://github.com/Fafaew/react-ecommerce"
+            <a className={styles.portfolioLinks} href="https://github.com/Fafaew/react-ecommerce"
               rel="noreferrer"
               target="_blank"
             >
               <img width="48" height="48" src="https://img.icons8.com/color/48/github-2.png" alt="github-2" />
               <p>Github</p>
             </a>
-            <a href="https://reactecommerceapp.netlify.app/"
+            <a className={styles.portfolioLinks} href="https://reactecommerceapp.netlify.app/"
               rel="noreferrer"
               target="_blank"
             >
@@ -73,14 +73,14 @@ const Portfolio = () => {
             Manage your investments with this tracker for over 1000 cryptocurrencies. Developed using CoinGecko API
           </p>
           <div className={styles.portfolioCode}>
-            <a href="https://github.com/Fafaew/react-cryptocurrency-tracker"
+            <a className={styles.portfolioLinks} href="https://github.com/Fafaew/react-cryptocurrency-tracker"
               rel="noreferrer"
               target="_blank"
             >
               <img width="48" height="48" src="https://img.icons8.com/color/48/github-2.png" alt="github-2" />
               <p>Github</p>
             </a>
-            <a href="https://cryptocurr-react.netlify.app/"
+            <a className={styles.portfolioLinks} href="https://cryptocurr-react.netlify.app/"
               rel="noreferrer"
               target="_blank"
             >
@@ -100,14 +100,14 @@ const Portfolio = () => {
               locations across the globe with OpenWeather API
           </p>
           <div className={styles.portfolioCode}>
-            <a href="https://github.com/Fafaew/weather-location"
+            <a className={styles.portfolioLinks} href="https://github.com/Fafaew/weather-location"
               rel="noreferrer"
               target="_blank"
             >
               <img width="48" height="48" src="https://img.icons8.com/color/48/github-2.png" alt="github-2" />
               <p>Github</p>
             </a>
-            <a href="https://fafaew.github.io/weather-location/"
+            <a className={styles.portfolioLinks} href="https://fafaew.github.io/weather-location/"
               rel="noreferrer"
               target="_blank"
             >
