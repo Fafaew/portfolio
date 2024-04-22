@@ -16,7 +16,7 @@ const Header = () => {
     }).then(() => {
       setInit(true);
     });
-  }, []);
+  }, [init]);
 
   const particlesLoaded = (container) => {
     return;
@@ -100,50 +100,46 @@ const Header = () => {
     }
   };
 
-  if (init) {
-    return (
-      <>
-        <Particles
-          id={styles.tsparticles}
-          particlesLoaded={particlesLoaded}
-          options={options}
-        />
-
-        <div className={styles.headerWraper} id="home">
-          <TypeAnimation
-          sequence={[
-            'Node',
-            1000,
-            'JavaScript',
-            1000,
-            'React',
-            1000,
-            'Shopify',
-            1000
-          ]}
-          className={styles.typingWrapper}
-          wrapper="span"
-          speed={30}
-          repeat={Infinity}
-        />
-          <div className={styles.contactWrapper}>
-            <Link
-              to="contact"
-              spy={true}
-              smooth={true}
-              offset={-10}
-              duration={500}
-              className={styles.contactButton}
-              onClick={handleLinkClick}
-            >
-              Contact me
-            </Link>
-          </div>
+  return (
+    <>
+      <Particles
+        id={styles.tsparticles}
+        particlesLoaded={particlesLoaded}
+        options={options}
+      />
+      <div className={styles.headerWraper} id="home">
+        <TypeAnimation
+        sequence={[
+          'Node',
+          1000,
+          'JavaScript',
+          1000,
+          'React',
+          1000,
+          'Shopify',
+          1000
+        ]}
+        className={styles.typingWrapper}
+        wrapper="span"
+        speed={30}
+        repeat={Infinity}
+      />
+        <div className={styles.contactWrapper}>
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-10}
+            duration={500}
+            className={styles.contactButton}
+            onClick={handleLinkClick}
+          >
+            Contact me
+          </Link>
         </div>
-      </>
-    );
-  }
- 
+      </div>
+    </>
+  );
 }
 
 export default Header
