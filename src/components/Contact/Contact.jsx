@@ -34,7 +34,7 @@ const Contact = () => {
 
   return (
     <div className={styles.contactContainer} id="contact">
-      <h2 class={styles.contactSubtitle}>Contact </h2>
+      <h2 className={styles.contactSubtitle}>Contact </h2>
 
       <form className={styles.form} onSubmit={sendEmail}>
         <input 
@@ -64,7 +64,7 @@ const Contact = () => {
       </form>
 
       <div className={styles.socialBox}>
-        <h2 class={styles.contactSubtitle}>Social Links </h2>
+        <h2 className={styles.contactSubtitle}>Social Links </h2>
         < div className={styles.socialWrapper}>
           <div className={styles.socialItem}>
             <a className={styles.socialLink} href="https://twitter.com/fafaelgomes" target="_blank" rel="noreferrer">

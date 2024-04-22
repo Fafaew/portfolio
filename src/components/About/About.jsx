@@ -15,7 +15,7 @@ const About = () => {
 
       <div className={styles.aboutWrapper}>
         <div className={styles.aboutIntro}>
-          <h2 class={styles.aboutSubtitle}>About </h2>
+          <h2 className={styles.aboutSubtitle}>About </h2>
           <p>
             Hello everyone, I'm Rafael Gomes, a passionate frontend developer, based in Minas Gerais, Brazil.
           </p>
@@ -30,7 +30,7 @@ const About = () => {
           </p>
         </div>
         <div className={styles.aboutIntro}>
-          <h2 class={styles.aboutSubtitle}>Hobbies </h2>
+          <h2 className={styles.aboutSubtitle}>Hobbies </h2>
           <p>Apart from coding, some other activities that I love to do:</p>
           <div className={styles.aboutActivities}>
             <img width="26" height="26" src="https://img.icons8.com/color/48/controller.png" alt="controller"/>
@@ -50,7 +50,7 @@ const About = () => {
           </div>
         </div>
         <div className={styles.aboutIntro}>
-          <h2 class={styles.aboutSubtitle}>Skills </h2>
+          <h2 className={styles.aboutSubtitle}>Skills </h2>
           <p>Technologies that I use:</p>
           <div className={styles.aboutIconsWrapper}>
             <FaNode className={`${styles.aboutIcons} ${styles.nodeIcon}`} />
