@@ -28,7 +28,7 @@ const Portfolio = () => {
               <img width="48" height="48" src="https://img.icons8.com/color/48/github-2.png" alt="github-2" />
               <p>Github</p>
             </a>
-            <a className={styles.portfolioLinks} href="https://github.com/Fafaew/react-dashboard"
+            <a href="https://fafaew.github.io/react-dashboard/"
               rel="noreferrer"
               target="_blank"
             >

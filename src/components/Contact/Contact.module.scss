@@ -68,17 +68,17 @@
 }
 
 .input{
+  font-family: Arial, Helvetica, sans-serif;
   height: 44px;
   border-radius: 4px;
-  border: 1px solid #ced4da;
+  border: 1px solid $primary-blue;
   margin-bottom: 1rem;
   padding: 8px;
 
-  &:focus {
-    border-color: $secondary-blue;
+  &:focus-visible {
+    border: 1px solid $secondary-blue;
   }
 }
-
 
 .textarea{
   margin-bottom: 14px;
